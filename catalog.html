@@ -6,7 +6,156 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header></header>
+  <!-- Header -->
+  <header class="main-header">
+    <a class="header-logo" href="index.html">
+        <img class="header-logo-img" src="images/header/glaccy.svg" width="137" height="55" alt="Логотип сайта Глейси">
+    </a>
+    <nav class="navigation">
+        <div class="wrap-menu">
+            <ul class="navigation-menu-list">
+                <li class="navigation-menu-item arrow-img">
+                    <a class="navigation-menu-link" href="#">Каталог</a>
+                    <ul class="dropdown-list">
+                        <li class="dropdown-item new-category">
+                            <a class="dropdown-link" href="#">Новинки</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-link" href="catalog.html">Сливочное</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-link" href="#">Щербеты</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-link" href="#">Фруктовый лет</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-link" href="#">Мелорин</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation-menu-item">
+                    <a class="navigation-menu-link" href="#">Доставка и оплата</a>
+                </li>
+                <li class="navigation-menu-item">
+                    <a class="navigation-menu-link" href="#">О компании</a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap-user-menu">
+            <a class="user-tel" href="tel:+7800558628">+7 800 555-86-28</a>
+            <ul class="user-menu-list">
+                <li class="user-menu-item">
+                    <a class="user-menu-link menu-search" href="#">
+                        <span class="visually-hidden">Поиск</span>
+                    </a>
+                    <form class="search-form" action="https://echo.htmlacademy.ru/">
+                        <label>
+                            <input class="search-form-input" placeholder="Поиск по сайту" type="text">
+                            <button class="search-rorm-button-reset" type="reset">
+                              <span class="visually-hidden">Удалить запрос</span>
+                            </button>
+                        </label>
+                    </form>
+                </li>
+                <li class="user-menu-item">
+                    <a class="user-menu-link entry-image" href="#" >
+                        Вход
+                    </a>
+
+                    <form class="entry-form" action="https://echo.htmlacademy.ru/">
+                        <h2 class="entry-title">Личный кабинет</h2>
+                        <p>
+                            <span>
+                                <label for="appointment-email">
+                                  <input class="entry-input" type="email" value="email@example.com" name="email-login">
+                                </label>
+                            </span>
+                        </p>
+
+                        <p>
+                            <span>
+                                <label for="appointment-password">
+                                  <input class="entry-input" id="appointment-password" type="password" value="111111" >
+                                </label>
+                            </span>
+                        </p>
+                        <div class="entry-link-wrap">
+                            <button class="entry-button" type="submit">Войти</button>
+                            <ul class="entry-list">
+                                <li class="entry-item">
+                                    <a class="entry-link" href="#">Забыли пароль?</a>
+                                </li>
+                                <li class="entry-item">
+                                    <a class="entry-link" href="#">Регистрация</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </form>
+
+                </li>
+                <li class="user-menu-item">
+                  <a class="user-menu-link cart-image" href="#" >
+                      2 товара
+                  </a>
+
+                  <div class="cart-popup">
+                    <h2 class="popup-title">Корзина</h2>
+                    <ul class="cart-popup-list">
+                      <li class="cart-popup-item">
+                        <div class="cart-popup-image-container">
+                          <img src="images/header/ice-cream-1.png" width="46" height="46" alt="Малинка">
+                        </div>
+                        <a class="cart-popup-title" href="#">Малинка</a>
+                        <p class="cart-popup-product-calc">
+                          <span class="product-calc-count">1</span>
+                          кг х
+                          <span class="product-calc-price">310</span>
+                          ₽
+                        </p>
+                        <p class="cart-popup-product-price">
+                          <span class="product-price-value">310</span>
+                          ₽
+                        </p>
+                        <button class="cart-popup-product-remove"></button>
+                      </li>
+                      <li class="cart-popup-item">
+                        <div class="cart-popup-image-container">
+                          <img src="images/header/ice-cream-2.png" alt="">
+                        </div>
+                        <a class="cart-popup-title" href="#">Бабл-гам</a>
+                        <p class="cart-popup-product-calc">
+                          <span class="product-calc-count">1,5</span>
+                          кг х
+                          <span class="product-calc-price">320</span>
+                          ₽
+                        </p>
+                        <p class="cart-popup-product-price">
+                          <span class="product-price-value">480</span>
+                          ₽
+                        </p>
+                        <button class="cart-popup-product-remove" type="button"></button>
+                      </li>
+                    </ul>
+                    <div class="cart-popup-footer">
+                      <a href="" class="cart-popup-button">Оформить заказ</a>
+                      <p class="cart-popup-result">
+                        Итого:
+                        <span class="cart-result__value">790</span>
+                        ₽
+                      </p>
+                    </div>
+                  </div>
+                  <div class="cart-popup-empty">
+                    <h2 class="popup-title cart-popup-title--empty">Ваша корзина пока пуста</h2>
+                  </div>
+              </li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+  <!-- Header -->
     <main>
         <header class="breadcrumds">
             <ol class="breadcrams-list">
@@ -24,12 +173,14 @@
         </header>
 
         <section class="catalog-filter-section">
-            <form class="catalog-filter-form" action="">
+            <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/">
 
                 <fieldset class="catalog-filter-group sorting-item">
                     <legend class="catalog-filter-title">Сортировка:</legend>
-                    <select class="select-control" aria-label="Сортировка">
-                        <option value="popular">по популярности</option>
+                    <select class="select-control" name="filter" aria-label="Сортировка">
+                        <option class="select-item" value="popular">по популярности</option>
+                        <option class="select-item" value="popular">сначала дорогие</option>
+                        <option class="select-item" value="popular">сначала дешевые</option>
                     </select>
                 </fieldset>
 
@@ -44,7 +195,7 @@
                         </div>
                     </div>
                 </fieldset>
-                
+
                 <fieldset class="catalog-filter-group percentage-item">
                     <legend class="catalog-filter-title">
                         Жирность:
@@ -87,7 +238,7 @@
                         <ul class="control-filter-list control-filter-list-wrap">
                             <li class="control-filter-item">
                                 <label class="control">
-                                    <input class="control-input visually-hidden" type="checkbox" name="" checked>
+                                    <input class="control-input visually-hidden" type="checkbox" name="chocolate-filler" checked>
                                     <span class="control-mark checkbox-mark">
                                         <svg class="icon-checkbox" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                             <g clip-path="url(#clip0_23768_1345)">
@@ -98,14 +249,14 @@
                                             <rect width="16" height="16" fill="white"/>
                                             </clipPath>
                                             </defs>
-                                        </svg>                                        
+                                        </svg>
                                     </span>
                                     <span class="control-label">шоколадные</span>
                                 </label>
                             </li>
                             <li class="control-filter-item">
                                 <label class="control">
-                                    <input class="control-input visually-hidden" type="checkbox" name="" checked>
+                                    <input class="control-input visually-hidden" type="checkbox" name="sugar-sprinkles-filler" checked>
                                     <span class="control-mark checkbox-mark">
                                         <svg class="icon-checkbox" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                             <g clip-path="url(#clip0_23768_1345)">
@@ -116,14 +267,14 @@
                                             <rect width="16" height="16" fill="white"/>
                                             </clipPath>
                                             </defs>
-                                        </svg>    
+                                        </svg>
                                     </span>
                                     <span class="control-label">сахарные посыпки</span>
                                 </label>
                             </li>
                             <li class="control-filter-item">
                                 <label class="control">
-                                    <input class="control-input visually-hidden" type="checkbox" name="">
+                                    <input class="control-input visually-hidden" type="checkbox" name="fruits-filler">
                                     <span class="control-mark checkbox-mark">
                                         <svg class="icon-checkbox" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                             <g clip-path="url(#clip0_23768_1345)">
@@ -134,14 +285,14 @@
                                             <rect width="16" height="16" fill="white"/>
                                             </clipPath>
                                             </defs>
-                                        </svg>    
+                                        </svg>
                                     </span>
                                     <span class="control-label">фрукты</span>
                                 </label>
                             </li>
                             <li class="control-filter-item">
                                 <label class="control">
-                                    <input class="control-input visually-hidden" type="checkbox" name="">
+                                    <input class="control-input visually-hidden" type="checkbox" name="syrups-filler">
                                     <span class="control-mark checkbox-mark">
                                         <svg class="icon-checkbox" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                             <g clip-path="url(#clip0_23768_1345)">
@@ -152,14 +303,14 @@
                                             <rect width="16" height="16" fill="white"/>
                                             </clipPath>
                                             </defs>
-                                        </svg>    
+                                        </svg>
                                     </span>
                                     <span class="control-label">сиропы</span>
                                 </label>
                             </li>
                             <li class="control-filter-item">
                                 <label class="control">
-                                    <input class="control-input visually-hidden" type="checkbox" name="">
+                                    <input class="control-input visually-hidden" type="checkbox" name="jams-filler">
                                     <span class="control-mark checkbox-mark">
                                         <svg class="icon-checkbox" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                             <g clip-path="url(#clip0_23768_1345)">
@@ -170,7 +321,7 @@
                                             <rect width="16" height="16" fill="white"/>
                                             </clipPath>
                                             </defs>
-                                        </svg>    
+                                        </svg>
 
                                     </span>
                                     <span class="control-label">джемы</span>
@@ -447,7 +598,7 @@
                 <button class="pagination-button previous-button" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80527C10.063 3.54557 10.063 3.12452 9.8033 2.86482C9.54361 2.60512 9.12255 2.60512 8.86285 2.86482L4.19477 7.5329C3.93593 7.79174 3.93508 8.21088 4.19221 8.47077C4.19338 8.47195 4.19454 8.47313 4.19572 8.4743L8.8638 13.1424C9.12349 13.4021 9.54455 13.4021 9.80425 13.1424C10.0639 12.8827 10.0639 12.4616 9.80425 12.2019L5.60545 8.00313L9.8033 3.80527Z"/>
-                        
+
                     </svg>
                 </button>
                 <ol class="pagination-list">
@@ -475,19 +626,17 @@
             </div>
         </section>
     </main>
-    <footer class="main-footer footer">
+    <footer class="main-footer footer--border">
         <ul class="footer-social-list">
             <li class="social-item">
               <a class="social-link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">
                   Телеграм.
                 </span>
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="telegram">
-                    <path id="telegram_2" fill-rule="evenodd" clip-rule="evenodd" d="M26 14C26 20.627 20.627 26 14 26C7.373 26 2 20.627 2 14C2 7.373 7.373 2 14 2C20.627 2 26 7.373 26 14ZM14.43 10.859C13.263 11.344 10.93 12.349 7.432 13.873C6.864 14.099 6.566 14.32 6.539 14.536C6.493 14.902 6.951 15.046 7.573 15.241C7.658 15.268 7.746 15.295 7.836 15.325C8.449 15.524 9.273 15.757 9.701 15.766C10.09 15.774 10.524 15.614 11.003 15.286C14.271 13.079 15.958 11.964 16.064 11.94C16.139 11.923 16.243 11.901 16.313 11.964C16.383 12.026 16.376 12.144 16.369 12.176C16.323 12.369 14.529 14.038 13.599 14.902C13.309 15.171 13.104 15.362 13.062 15.406C12.968 15.503 12.872 15.596 12.78 15.685C12.21 16.233 11.784 16.645 12.804 17.317C13.294 17.64 13.686 17.907 14.077 18.173C14.504 18.464 14.93 18.754 15.482 19.116C15.622 19.208 15.756 19.303 15.887 19.396C16.384 19.751 16.831 20.069 17.383 20.019C17.703 19.989 18.035 19.688 18.203 18.789C18.6 16.663 19.382 12.059 19.563 10.161C19.574 10.0034 19.5673 9.84509 19.543 9.689C19.5285 9.56293 19.4671 9.44693 19.371 9.364C19.228 9.247 19.006 9.222 18.906 9.224C18.455 9.232 17.763 9.473 14.43 10.859Z" fill="#FCFCFC"/>
-                    </g>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.418 12.418 16 8 16C3.582 16 0 12.418 0 8C0 3.582 3.582 0 8 0C12.418 0 16 3.582 16 8ZM8.28667 5.906C7.50867 6.22933 5.95333 6.89933 3.62133 7.91533C3.24267 8.066 3.044 8.21333 3.026 8.35733C2.99533 8.60133 3.30067 8.69733 3.71533 8.82733C3.772 8.84533 3.83067 8.86333 3.89067 8.88333C4.29933 9.016 4.84867 9.17133 5.134 9.17733C5.39333 9.18267 5.68267 9.076 6.002 8.85733C8.18067 7.386 9.30533 6.64267 9.376 6.62667C9.426 6.61533 9.49533 6.60067 9.542 6.64267C9.58867 6.684 9.584 6.76267 9.57933 6.784C9.54867 6.91267 8.35267 8.02533 7.73267 8.60133C7.53933 8.78067 7.40267 8.908 7.37467 8.93733C7.312 9.002 7.248 9.064 7.18667 9.12333C6.80667 9.48867 6.52267 9.76333 7.20267 10.2113C7.52933 10.4267 7.79067 10.6047 8.05133 10.782C8.336 10.976 8.62 11.1693 8.988 11.4107C9.08133 11.472 9.17067 11.5353 9.258 11.5973C9.58933 11.834 9.88733 12.046 10.2553 12.0127C10.4687 11.9927 10.69 11.792 10.802 11.1927C11.0667 9.77533 11.588 6.706 11.7087 5.44067C11.716 5.33561 11.7115 5.23006 11.6953 5.126C11.6856 5.04195 11.6447 4.96462 11.5807 4.90933C11.4853 4.83133 11.3373 4.81467 11.2707 4.816C10.97 4.82133 10.5087 4.982 8.28667 5.906Z"></path>
                     </svg>
-                    
+
               </a>
             </li>
             <li class="social-item">
@@ -495,8 +644,9 @@
                 <span class="visually-hidden">
                   ВКонтакте.
                 </span>
-                <svg class="icon-navigation" width="28" height="28" viewBox="0 0 28 28" fisll="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26 14C26 20.6274 20.6274 26 14 26C7.37258 26 2 20.6274 2 14C2 7.37258 7.37258 2 14 2C20.6274 2 26 7.37258 26 14ZM14.5884 16.9749H13.8711C13.8711 16.9749 12.2885 17.0584 10.8948 15.7867C9.37486 14.3995 8.03249 11.647 8.03249 11.647C8.03249 11.647 7.95511 11.4665 8.03917 11.3793C8.13366 11.2812 8.39106 11.2749 8.39106 11.2749L10.1057 11.2651C10.1057 11.2651 10.2673 11.2888 10.3829 11.3632C10.4782 11.4246 10.5317 11.5394 10.5317 11.5394C10.5317 11.5394 10.8088 12.1536 11.1758 12.7093C11.8921 13.7942 12.2258 14.0315 12.469 13.9152C12.8233 13.7458 12.7171 12.3816 12.7171 12.3816C12.7171 12.3816 12.7236 11.8865 12.5387 11.666C12.3955 11.4951 12.1254 11.4453 12.0062 11.4313C11.9097 11.42 12.0681 11.2237 12.2733 11.1356C12.5819 11.0031 13.1268 10.9955 13.7706 11.0014C14.2722 11.0058 14.4165 11.0332 14.6127 11.0748C15.0677 11.1711 15.0536 11.4796 15.0229 12.1454C15.0138 12.3444 15.0032 12.5752 15.0032 12.8418C15.0032 12.9018 15.0012 12.9657 14.9991 13.0315C14.9885 13.3725 14.9763 13.7629 15.2324 13.908C15.3637 13.9822 15.6849 13.9191 16.4884 12.7233C16.8693 12.1566 17.1549 11.4902 17.1549 11.4902C17.1549 11.4902 17.2173 11.3715 17.3142 11.3205C17.4134 11.2685 17.5472 11.2845 17.5472 11.2845L19.3515 11.2746C19.3515 11.2746 19.8937 11.218 19.9815 11.4324C20.0735 11.6576 19.7788 12.1833 19.0417 13.0444C18.3463 13.8567 18.006 14.1587 18.0328 14.4236C18.0527 14.6198 18.2739 14.7957 18.7015 15.1436C19.5897 15.8661 19.8264 16.2455 19.8827 16.3357C19.8872 16.343 19.8906 16.3484 19.893 16.3519C20.2905 16.9296 19.4522 16.9749 19.4522 16.9749L17.8497 16.9944C17.8497 16.9944 17.5053 17.0543 17.0521 16.7814C16.8151 16.6388 16.5833 16.406 16.3626 16.1842C16.0251 15.8451 15.7131 15.5316 15.4469 15.6056C15.0002 15.7298 15.0143 16.5734 15.0143 16.5734C15.0143 16.5734 15.0175 16.7536 14.9157 16.8495C14.8051 16.954 14.5884 16.9749 14.5884 16.9749Z" fill="#FCFCFC"/>                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8.39228 9.98325H7.91409C7.91409 9.98325 6.85898 10.0389 5.92986 9.19111C4.91657 8.26636 4.02166 6.43135 4.02166 6.43135C4.02166 6.43135 3.97008 6.31103 4.02612 6.25287C4.08911 6.18748 4.2607 6.18329 4.2607 6.18329L5.40378 6.17672C5.40378 6.17672 5.51151 6.19252 5.58862 6.24211C5.65216 6.28304 5.68778 6.35957 5.68778 6.35957C5.68778 6.35957 5.87252 6.76907 6.11721 7.13954C6.59475 7.86277 6.81717 8.02097 6.97932 7.94349C7.21553 7.8305 7.14472 6.92108 7.14472 6.92108C7.14472 6.92108 7.14907 6.59097 7.0258 6.44401C6.93034 6.33007 6.75027 6.29685 6.67077 6.28752C6.60647 6.28 6.71204 6.14912 6.84888 6.09038C7.05458 6.00205 7.41787 5.99701 7.84708 6.00091C8.18147 6.00386 8.2777 6.02214 8.40846 6.04984C8.71183 6.11404 8.70237 6.31976 8.68196 6.76362C8.67586 6.89625 8.66879 7.05014 8.66879 7.22787C8.66879 7.26786 8.66746 7.31048 8.66609 7.35433C8.659 7.58166 8.65089 7.84192 8.82159 7.93863C8.90913 7.98813 9.1233 7.94606 9.65894 7.14887C9.91286 6.77107 10.1032 6.32683 10.1032 6.32683C10.1032 6.32683 10.1448 6.24763 10.2095 6.21365C10.2756 6.179 10.3648 6.18966 10.3648 6.18966L11.5677 6.1831C11.5677 6.1831 11.9291 6.14531 11.9877 6.28828C12.049 6.43839 11.8526 6.78887 11.3611 7.36294C10.8976 7.90445 10.6707 8.10579 10.6886 8.2824C10.7018 8.41323 10.8493 8.53049 11.1343 8.76238C11.7265 9.24409 11.8843 9.49702 11.9218 9.55713C11.9248 9.56199 11.9271 9.56559 11.9287 9.56795C12.1937 9.95308 11.6348 9.98325 11.6348 9.98325L10.5665 9.99629C10.5665 9.99629 10.3369 10.0362 10.0347 9.85427C9.87671 9.75923 9.72223 9.60401 9.57505 9.45612C9.35005 9.23004 9.1421 9.02109 8.96463 9.07041C8.66683 9.15322 8.67617 9.71559 8.67617 9.71559C8.67617 9.71559 8.67834 9.83571 8.61046 9.89968C8.53672 9.96936 8.39228 9.98325 8.39228 9.98325Z"/>
+                </svg>
               </a>
             </li>
             <li class="social-item">
@@ -504,10 +654,10 @@
                 <span class="visually-hidden">
                   Ютуб.
                 </span>
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.0037 13.7913L13.1963 12.4813C12.9513 12.3675 12.75 12.495 12.75 12.7662V15.2338C12.75 15.505 12.9513 15.6325 13.1963 15.5188L16.0025 14.2087C16.2488 14.0938 16.2487 13.9063 16.0037 13.7913ZM14 2C7.3725 2 2 7.3725 2 14C2 20.6275 7.3725 26 14 26C20.6275 26 26 20.6275 26 14C26 7.3725 20.6275 2 14 2ZM14 18.875C7.8575 18.875 7.75 18.3213 7.75 14C7.75 9.67875 7.8575 9.125 14 9.125C20.1425 9.125 20.25 9.67875 20.25 14C20.25 18.3213 20.1425 18.875 14 18.875Z" fill="#FCFCFC"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M9.33583 7.86083L7.46417 6.9875C7.30083 6.91167 7.16667 6.99667 7.16667 7.1775V8.8225C7.16667 9.00333 7.30083 9.08833 7.46417 9.0125L9.335 8.13917C9.49917 8.0625 9.49917 7.9375 9.33583 7.86083ZM8 0C3.58167 0 0 3.58167 0 8C0 12.4183 3.58167 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58167 12.4183 0 8 0ZM8 11.25C3.905 11.25 3.83333 10.8808 3.83333 8C3.83333 5.11917 3.905 4.75 8 4.75C12.095 4.75 12.1667 5.11917 12.1667 8C12.1667 10.8808 12.095 11.25 8 11.25Z" />
                 </svg>
-                    
+
               </a>
             </li>
           </ul>
@@ -527,8 +677,8 @@
             </li>
         </ul>
 
-       
-        
+
+
 
         <div class="footer-element-wrap">
             <a class="footer-school" href="https://htmlacademy.ru/">
